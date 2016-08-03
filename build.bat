@@ -1,4 +1,4 @@
 #!/bin/bash
 
-CLASSPATH=/Users/ninaholmgren/Desktop/.git/googlepoodle/hamcrest-core-1.3.jar:/Users/ninaholmgren/Desktop/.git/googlepoodle/hamcrest-library-1.3.jar:/Users/ninaholmgren/Desktop/.git/googlepoodle/jedis-2.8.0.jar:/Users/ninaholmgren/Desktop/.git/googlepoodle/jsoup-1.8.3.jar:/Users/ninaholmgren/Desktop/.git/googlepoodle/junit-4.12.jar
+CLASSPATH=./hamcrest-core-1.3.jar:./hamcrest-library-1.3.jar:./jedis-2.8.0.jar:./jsoup-1.8.3.jar:./junit-4.12.jar:.googlepoodle
 javac -cp $CLASSPATH *.java

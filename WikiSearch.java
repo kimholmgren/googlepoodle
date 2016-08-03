@@ -1,4 +1,4 @@
-package com.flatironschool.javacs;
+package googlepoodle;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -46,11 +46,17 @@ public class WikiSearch {
 	 * 
 	 * @param map
 	 */
-	private  void print() {
-		List<Entry<String, Integer>> entries = sort();
+	private  void print(int mode) {
+		List<Entry<String, Integer>> entries = sort(mode);
 		for (Entry<String, Integer> entry: entries) {
 			System.out.println(entry);
 		}
+	}
+
+	// for print without argument
+
+	private void print() {
+		print(0);
 	}
 	
 	/**
@@ -116,7 +122,7 @@ public class WikiSearch {
 	 * 
 	 * @return List of entries with URL and relevance.
 	 */
-	public List<Entry<String, Integer>> sort() {
+	public List<Entry<String, Integer>> sort(int mode) {
 		// NOTE: this can be done more concisely in Java 8.  See
 		// http://stackoverflow.com/questions/109383/sort-a-mapkey-value-by-values-java
 
@@ -128,7 +134,18 @@ public class WikiSearch {
 		Comparator<Entry<String, Integer>> comparator = new Comparator<Entry<String, Integer>>() {
             @Override
             public int compare(Entry<String, Integer> e1, Entry<String, Integer> e2) {
-                return e1.getValue().compareTo(e2.getValue());
+              if(mode==0) {
+               		 return e1.getValue().compareTo(e2.getValue());
+              } else if(mode==1) {
+              			return 0;
+              } else if(mode==2) {
+              		int value = e1.getValue().compareTo(e2.getValue());
+              		return ~(value-1);
+              } else {
+              	//this should throw an exception but for now ill do random mode
+              	//return (100*Math.random()).intValue();
+              	return (int) Math.round(Math.random() * 255);
+              }
             }
         };
         

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.flatironschool.javacs;
+package googlepoodle;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
@@ -85,7 +85,7 @@ public class WikiSearchTest {
 	 */
 	@Test
 	public void testSort() {
-		List<Entry<String, Integer>> list = search2.sort();
+		List<Entry<String, Integer>> list = search2.sort(0);
 		assertThat(list.get(0).getValue(), is(4));
 		assertThat(list.get(1).getValue(), is(5));
 		assertThat(list.get(2).getValue(), is(7));
