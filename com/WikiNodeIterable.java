@@ -1,7 +1,7 @@
 /**
  * 
  */
-package googlepoodle;
+package googlepoodle.com;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

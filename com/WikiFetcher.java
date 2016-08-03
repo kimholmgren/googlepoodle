@@ -1,4 +1,4 @@
-package googlepoodle;
+package googlepoodle.com;
 
 import java.io.File;
 import java.io.IOException;

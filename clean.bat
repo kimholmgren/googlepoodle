@@ -1,1 +1,1 @@
-rm *.class
+rm com/*.class

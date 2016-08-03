@@ -1,4 +1,4 @@
-package googlepoodle;
+package googlepoodle.com;
 
 import java.io.IOException;
 import java.util.Collections;

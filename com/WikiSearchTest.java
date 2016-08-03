@@ -1,7 +1,7 @@
 /**
  * 
  */
-package googlepoodle;
+package googlepoodle.com;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;

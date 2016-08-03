@@ -1,5 +1,5 @@
 #!/bin/bash
 
-CLASSPATH=./hamcrest-core-1.3.jar:./hamcrest-library-1.3.jar:./jedis-2.8.0.jar:./jsoup-1.8.3.jar:./junit-4.12.jar:.:googlepoodle.SearchEngine
+CLASSPATH=./googlepoodle/com/hamcrest-core-1.3.jar:./googlepoodle/com/hamcrest-library-1.3.jar:./googlepoodle/com/jedis-2.8.0.jar:./googlepoodle/com/jsoup-1.8.3.jar:./googlepoodle/com/junit-4.12.jar:.:/googlepoodle/com/SearchEngine
 cd ..
-java -cp $CLASSPATH googlepoodle.SearchEngine
+java -cp $CLASSPATH googlepoodle.com.SearchEngine
