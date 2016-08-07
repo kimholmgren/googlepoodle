@@ -30,7 +30,9 @@ public class SearchEngine {
     System.out.println("What would you like to search?");    
     String query = scanner.next();
     System.out.println("Your query is " + query);
-    System.out.println("Which search mode would you like to use? Enter an option 0-4. If you'd like more information about the modes, please enter 'help'. If you don't want to complete this search, enter 'quit'.");
+    System.out.println("Which search mode would you like to use? Enter an option 0-4.");
+    System.out.println("If you'd like more information about the modes, please enter 'help'.");
+    System.out.println("If you don't want to complete this search, enter 'quit'.");
     int validmode=0;
     int searchMode=-1;
     while(validmode==0) {
@@ -45,7 +47,7 @@ public class SearchEngine {
         System.out.println("Now, which mode would you like to search in?");
       } else if(mode.equals("0") || mode.equals("1") || mode.equals("2") || mode.equals("3" )|| mode.equals("4")) {
         searchMode = Integer.parseInt(mode);
-        System.out.println("Great, we're searching in mode "+searchMode+" for your query.");
+        System.out.println("Great, we're searching in mode "+searchMode+" for \""+query+"\"");
         validmode=1;
       } else if (mode.equals("quit") || mode.equals("q") ||mode.equals("Quit") || mode.equals("Q")) {
         return;
