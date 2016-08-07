@@ -27,9 +27,7 @@ public class JedisMaker {
 		// assemble the directory name
 		String slash = File.separator;
 		String filename = "googlepoodle" + slash + "resources" + slash + "redis_url.txt";
-		System.out.println(filename);
 		URL fileURL = JedisMaker.class.getClassLoader().getResource(filename);
-				System.out.println("looking for "+fileURL);
                 String filepath = URLDecoder.decode(fileURL.getFile(), "UTF-8");
 
                 StringBuilder sb = new StringBuilder();

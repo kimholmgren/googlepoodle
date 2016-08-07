@@ -4,6 +4,10 @@ import java.util.Scanner;
 import redis.clients.jedis.Jedis;
 import java.io.IOException;
 import redis.clients.jedis.Transaction;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class SearchEngine {
 
@@ -12,11 +16,29 @@ public class SearchEngine {
   private static int executeSearch(int mode, String query) throws IOException {
 
     //initialize search
-    String source = "";
+    String source = "https://en.wikipedia.org/wiki/Philosophy";
     JedisMaker jedisMaker = new JedisMaker();
     Jedis jedis = jedisMaker.make();
     JedisIndex jedisIndex = new JedisIndex(jedis);
     WikiCrawler crawler = new WikiCrawler(source, jedisIndex);
+
+    //crawl the pages starting at source
+    Elements paragraphs = crawler.wf.fetchWikipedia(source);
+    crawler.queueInternalLinks(paragraphs);
+    //loop until we index a new page
+    String res;
+    do {
+      res = crawler.crawl(false);
+    } while (res == null);
+    
+    
+
+    Map<String, Integer> map = jedisIndex.getCounts(query);
+    for (Entry<String, Integer> entry: map.entrySet()) {
+      System.out.println(entry);
+    }
+
+    TermCounter tc = new TermCounter(query);
 
     return 1;
 
