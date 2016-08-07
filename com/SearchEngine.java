@@ -25,11 +25,63 @@ public class SearchEngine {
 
   public static void main(String[] args) throws IOException {
 
+    String query;
+    String[] parsedQuery;
+    boolean twoSearchTerms = false; // default assume there's one word
+    int andOrMinus = -1;        // if twoSearchTerms is 1 this signals and/or/minus as 0/1/2
+      
     Scanner scanner = new Scanner(System.in);
     System.out.println("Welcome to Google Poodle search engine!");
-    System.out.println("What would you like to search?");    
-    String query = scanner.next();
-    System.out.println("Your query is " + query);
+    System.out.println("Please enter one search term or two separated by a boolean operator");
+    System.out.println("Ex. \"cat\" or \"cat or dog\" (we support at most two search terms)");
+    
+    while(true){
+    System.out.println("Your query:");
+    query = scanner.next();
+      
+        //String[] parsedQuery = query.split(" "); // THIS DOES NOT WORK YET, will
+        for (String retval: query.split("\\s+")){
+            System.out.println(retval);
+            parsedQuery.add(retval);
+        }
+        
+        
+        if(parsedQuery.length > 3){
+            System.out.println("Sorry, currently Poodle supports at most two search terms");
+            continue;
+        }
+        if(parsedQuery.length == 1){
+            break;
+        }
+        if(parsedQuery.length == 3){
+            twoSearchTerms = true;
+            if(parsedQuery[2].equals("+")  ||
+               parsedQuery[2].equals("&")  ||
+               parsedQuery[2].equals("&&") ||
+               parsedQuery[2].toLowerCase().equals("and") ||
+               parsedQuery[2].toLowerCase().equals("intersection")){
+                andOrMinus = 0; // an "and" query
+                System.out.println("Reached and block");
+            } else if(parsedQuery[2].equals("/")  ||
+                      parsedQuery[2].equals("|")  ||
+                      parsedQuery[2].equals("||") ||
+                      parsedQuery[2].toLowerCase().equals("or") ||
+                      parsedQuery[2].toLowerCase().equals("union")){
+                andOrMinus = 1; // an "or" query
+            } else if(parsedQuery[2].equals("-")  ||
+                      parsedQuery[2].equals("~")  ||
+                      parsedQuery[2].toLowerCase().equals("not") ||
+                      parsedQuery[2].toLowerCase().equals("minus") ||
+                      parsedQuery[2].toLowerCase().equals("difference")){
+                andOrMinus = 2; // a "minus" query
+            } else {
+                System.out.println("Invalid boolean operator. Try again!");
+                continue;
+            }
+            break;
+        }
+    }
+      
     System.out.println("Which search mode would you like to use? Enter an option 0-4.");
     System.out.println("If you'd like more information about the modes, please enter 'help'.");
     System.out.println("If you don't want to complete this search, enter 'quit'.");
