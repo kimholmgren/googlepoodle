@@ -38,7 +38,7 @@ public class SearchEngine {
     while(validmode==0) {
       String mode = scanner.next();
       if(mode.equals("help") || mode.equals("h") ||mode.equals("Help") || mode.equals("H")) {
-        String mode0="Mode 0: Description to go here";
+        String mode0="Mode 0: Term Frequency (TF)";
         String mode1="Mode 1: Description to go here";
         String mode2="Mode 2: Description to go here";
         String mode3="Mode 3: Description to go here";
