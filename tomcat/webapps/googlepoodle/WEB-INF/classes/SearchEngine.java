@@ -9,15 +9,24 @@ import redis.clients.jedis.Transaction;
 public class SearchEngine {
     
     private TermCounter termCounter;
+    private static JedisIndex jedisIndex;
+
+    private static void crawl() throws IOException {
+        String source= "https://en.wikipedia.org/wiki/Cat";
+        JedisMaker jedisMaker = new JedisMaker();
+        Jedis jedis = jedisMaker.make();
+        jedisIndex = new JedisIndex(jedis);
+        WikiCrawler crawler = new WikiCrawler(source, jedisIndex);
+        //crawler.crawl(false);
+        String res;
+        do {
+            res = crawler.crawl(false);
+        } while (res != null);
+
+    }
     
     private static int executeSearch(int mode, String query) throws IOException {
         
-        //initialize search
-        String source = "";
-        JedisMaker jedisMaker = new JedisMaker();
-        Jedis jedis = jedisMaker.make();
-        JedisIndex jedisIndex = new JedisIndex(jedis);
-        WikiCrawler crawler = new WikiCrawler(source, jedisIndex);
         
         return 1;
         
@@ -109,7 +118,7 @@ public class SearchEngine {
             }
         }
         //now we have a searchMode and query
-        
+        //crawl();
         executeSearch(searchMode, query);
     }
 }
