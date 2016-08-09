@@ -136,12 +136,11 @@ public class WikiSearch {
             @Override
             public int compare(Entry<String, Integer> e1, Entry<String, Integer> e2) {
               if(mode==1) {
-               		 return e1.getValue().compareTo(e2.getValue());
+               		 return e2.getValue().compareTo(e1.getValue());
               } else if(mode==2) {
               			return 0;
               } else if(mode==3) {
-              		int value = e1.getValue().compareTo(e2.getValue());
-              		return ~(value-1);
+              		return e1.getValue().compareTo(e2.getValue());
               } else {
               	//this should throw an exception but for now ill do random mode
               	//return (100*Math.random()).intValue();

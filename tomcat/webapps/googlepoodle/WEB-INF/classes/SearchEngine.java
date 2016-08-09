@@ -71,6 +71,7 @@ public class SearchEngine {
         
     
     private static List<Entry<String, Integer>> executeSearch(int mode, String query, int parse) throws IOException {
+        System.out.println("Inside, " + mode + query + parse);
         WikiSearch search;
         initializeJedisIndex();
         if(parse!=0) {
@@ -91,9 +92,16 @@ public class SearchEngine {
         } else {
             //just one wiki search
             search = WikiSearch.search(query, jedisIndex);
+            System.out.println("ok were here");
         }
         //sort the wikisearch
         List<Entry<String, Integer>> sortedResults = search.sort(mode);
+        System.out.println("andhere"+sortedResults.size());
+        for (int i=0; i<sortedResults.size(); i++) {
+            Entry<String, Integer> entry = sortedResults.get(i);
+            System.out.println("finally were here");
+            System.out.println("Key: "+entry.getKey()+" Value: "+entry.getValue());
+        }
        return sortedResults;
         
     }
