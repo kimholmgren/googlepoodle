@@ -28,7 +28,7 @@ public class SearchEngine {
 
     }
 
-    private static int validString(String query) {
+    public static int validString(String query) {
         
         String[] parsedQuery = query.split("\\s+");
             
@@ -70,7 +70,7 @@ public class SearchEngine {
         
         
     
-    private static List<Entry<String, Integer>> executeSearch(int mode, String query, int parse) throws IOException {
+    public static List<Entry<String, Integer>> executeSearch(int mode, String query, int parse) throws IOException {
         System.out.println("Inside, " + mode + query + parse);
         WikiSearch search;
         initializeJedisIndex();
