@@ -47,6 +47,10 @@ public class SearchEngine {
                 System.out.println("Sorry, we currently support at most two search terms");
                 continue;
             }
+            if(parsedQuery.length == 2){
+                System.out.println("Two terms should be separated by a boolean operator");
+                continue;
+            }
             if(parsedQuery.length == 1){
                 twoSearchTerms = false; // redundant for the sake of being explicit
                 break;
