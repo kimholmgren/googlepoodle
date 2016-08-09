@@ -5,6 +5,11 @@ import java.util.Scanner;
 import redis.clients.jedis.Jedis;
 import java.io.IOException;
 import redis.clients.jedis.Transaction;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class SearchEngine {
     
@@ -40,7 +45,6 @@ public class SearchEngine {
             return 0;
         }
         if(parsedQuery.length == 3){
-            twoSearchTerms = true;
             if(parsedQuery[1].equals("+")  ||
                 parsedQuery[1].equals("&")  ||
                 parsedQuery[1].equals("&&") ||
@@ -61,10 +65,9 @@ public class SearchEngine {
                 return 3; // a "minus" query
             } else {
                 System.out.println("Invalid boolean operator. Try again!");
-                return -1;
             }
-            
         }
+        return -1;
     }
         
         
@@ -83,7 +86,7 @@ public class SearchEngine {
             } else if(parse==2) {
                 //or query
                 search = search1.or(search2);
-            } else if(parse==3) {
+            } else {
                 //minus query
                 search = search1.minus(search2);
             }
@@ -105,9 +108,10 @@ public class SearchEngine {
         System.out.println("Ex. \"cat\" or \"cat or dog\" (we support at most two search terms)");
         
         int parsedValue = -1;
+        String query="";
         while(parsedValue==-1) {
             System.out.println("Your query:");
-            String query = scanner.next();
+            query = scanner.next();
             parsedValue = validString(query);
         }
 
