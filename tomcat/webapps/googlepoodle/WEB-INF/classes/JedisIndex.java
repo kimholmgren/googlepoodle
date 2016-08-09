@@ -88,12 +88,18 @@ public class JedisIndex {
 	 * @param term
 	 * @return Map from URL to count.
 	 */
-	public Map<String, Integer> getCounts(String term) {
-		Map<String, Integer> map = new HashMap<String, Integer>();
+	public Map<String, Double> getCounts(String term, int mode) {
+		Map<String, Double> map = new HashMap<String, Double>();
 		Set<String> urls = getURLs(term);
 		for (String url: urls) {
-			Integer count = getCount(url, term);
-			map.put(url, count);
+			double count = getCount(url, term);
+            if(mode == 0 || mode == 1){
+                map.put(url, count);
+            }
+            else if(mode == 2){
+                double logCount = Math.log(count);
+                map.put(url, logCount);
+            }
 		}
 		return map;
 	}

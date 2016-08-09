@@ -34,19 +34,18 @@ public class DisplaySearch extends HttpServlet {
          createErrorPage(errorMessage, out); 
          return;   
       }
-      List<Entry<String, Integer>> results = SearchEngine.executeSearch(mode, query, parse);
+      List<Entry<String, Double>> results = SearchEngine.executeSearch(mode, query, parse);
  
       // Write the response message, in an HTML page
       try {
          out.println("<html>");
-         out.println(css+"h3 {text-shadow: -1.5px 0 navy, 0 1.5px navy,
-      1.5px 0 navy, 0 -1.5px navy}");
+         out.println(css+"h3 {text-shadow: -1.5px 0 navy, 0 1.5px navy, 1.5px 0 navy, 0 -1.5px navy}");
          out.println("<head><title>Search Results</title></head>");
 
 
          out.println("<body>");
          for(int i=0; i<results.size(); i++) {
-            Entry<String, Integer> entry = results.get(i);
+            Entry<String, Double> entry = results.get(i);
             out.println("<p>"+(i+1)+". "+entry.getKey());
          }
 

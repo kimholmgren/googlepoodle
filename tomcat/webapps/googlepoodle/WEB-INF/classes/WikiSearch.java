@@ -20,14 +20,14 @@ import redis.clients.jedis.Jedis;
 public class WikiSearch {
 	
 	// map from URLs that contain the term(s) to relevance score
-	private Map<String, Integer> map;
+	private Map<String, Double> map;
 
 	/**
 	 * Constructor.
 	 * 
 	 * @param map
 	 */
-	public WikiSearch(Map<String, Integer> map) {
+	public WikiSearch(Map<String, Double> map) {
 		this.map = map;
 	}
 	
@@ -37,8 +37,8 @@ public class WikiSearch {
 	 * @param url
 	 * @return
 	 */
-	public Integer getRelevance(String url) {
-		Integer relevance = map.get(url);
+	public Double getRelevance(String url) {
+		Double relevance = map.get(url);
 		return relevance==null ? 0: relevance;
 	}
 	
@@ -48,8 +48,8 @@ public class WikiSearch {
 	 * @param map
 	 */
 	private  void print(int mode) {
-		List<Entry<String, Integer>> entries = sort(mode);
-		for (Entry<String, Integer> entry: entries) {
+		List<Entry<String, Double>> entries = sort(mode);
+		for (Entry<String, Double> entry: entries) {
 			System.out.println(entry);
 		}
 	}
@@ -66,10 +66,10 @@ public class WikiSearch {
 	 * @param that
 	 * @return New WikiSearch object.
 	 */
-	public WikiSearch or(WikiSearch that) {
-		Map<String, Integer> union = new HashMap<String, Integer>(map);
+	public WikiSearch or(WikiSearch that, int mode) {
+		Map<String, Double> union = new HashMap<String, Double>(map);
 		for (String term: that.map.keySet()) {
-			int relevance = totalRelevance(this.getRelevance(term), that.getRelevance(term));
+			double relevance = totalRelevance(this.getRelevance(term), that.getRelevance(term), mode);
 			union.put(term, relevance);
 		}
 		return new WikiSearch(union);
@@ -81,11 +81,11 @@ public class WikiSearch {
 	 * @param that
 	 * @return New WikiSearch object.
 	 */
-	public WikiSearch and(WikiSearch that) {
-		Map<String, Integer> intersection = new HashMap<String, Integer>();
+	public WikiSearch and(WikiSearch that, int mode) {
+		Map<String, Double> intersection = new HashMap<String, Double>();
 		for (String term: map.keySet()) {
 			if (that.map.containsKey(term)) {
-				int relevance = totalRelevance(this.map.get(term), that.map.get(term));
+				double relevance = totalRelevance(this.map.get(term), that.map.get(term), mode);
 				intersection.put(term, relevance);
 			}
 		}
@@ -99,7 +99,7 @@ public class WikiSearch {
 	 * @return New WikiSearch object.
 	 */
 	public WikiSearch minus(WikiSearch that) {
-		Map<String, Integer> difference = new HashMap<String, Integer>(map);
+		Map<String, Double> difference = new HashMap<String, Double>(map);
 		for (String term: that.map.keySet()) {
 			difference.remove(term);
 		}
@@ -113,9 +113,13 @@ public class WikiSearch {
 	 * @param rel2: relevance score for the second search
 	 * @return
 	 */
-	protected int totalRelevance(Integer rel1, Integer rel2) {
+	protected double totalRelevance(Double rel1, Double rel2, int mode) {
 		// simple starting place: relevance is the sum of the term frequencies.
-		return rel1 + rel2;
+        if(mode == 0 || mode == 1 || mode == 4){
+            return (double)rel1 + rel2;
+        }
+        // if relevance is log scaled, totalrelevance is the log of e^rel1 + e^rel2
+        return (Math.log(Math.exp(rel1) + Math.exp(rel2)));
 	}
 
 	/**
@@ -123,27 +127,24 @@ public class WikiSearch {
 	 * 
 	 * @return List of entries with URL and relevance.
 	 */
-	public List<Entry<String, Integer>> sort(int mode) {
-		// NOTE: this can be done more concisely in Java 8.  See
-		// http://stackoverflow.com/questions/109383/sort-a-mapkey-value-by-values-java
-
+	public List<Entry<String, Double>> sort(int sortMode) {
+        
 		// make a list of entries
-		List<Entry<String, Integer>> entries = 
-				new LinkedList<Entry<String, Integer>>(map.entrySet());
+		List<Entry<String, Double>> entries =
+				new LinkedList<Entry<String, Double>>(map.entrySet());
 		
 		// make a Comparator object for sorting
-		Comparator<Entry<String, Integer>> comparator = new Comparator<Entry<String, Integer>>() {
+		Comparator<Entry<String, Double>> comparator = new Comparator<Entry<String, Double>>() {
             @Override
-            public int compare(Entry<String, Integer> e1, Entry<String, Integer> e2) {
-              if(mode==1) {
-               		 return e2.getValue().compareTo(e1.getValue());
-              } else if(mode==2) {
-              			return 0;
-              } else if(mode==3) {
-              		return e1.getValue().compareTo(e2.getValue());
+            public int compare(Entry<String, Double> e1, Entry<String, Double> e2) {
+              if(sortMode==0) { // descending order
+                  return e2.getValue().compareTo(e1.getValue());
+              } else if(sortMode==1) { // ascending order
+                  return e1.getValue().compareTo(e2.getValue());
+              } else if(sortMode==2) { // no order
+                  return 0;
               } else {
-              	//this should throw an exception but for now ill do random mode
-              	//return (100*Math.random()).intValue();
+              	//this should throw an exception but for now ill do random sortMode
               	return (int) Math.round(Math.random() * 255);
               }
             }
@@ -162,8 +163,8 @@ public class WikiSearch {
 	 * @param index
 	 * @return
 	 */
-	public static WikiSearch search(String term, JedisIndex index) {
-		Map<String, Integer> map = index.getCounts(term);
+	public static WikiSearch search(String term, JedisIndex index, int mode) {
+		Map<String, Double> map = index.getCounts(term, mode);
 		return new WikiSearch(map);
 	}
 
@@ -176,18 +177,18 @@ public class WikiSearch {
 		// search for the first term
 		String term1 = "java";
 		System.out.println("Query: " + term1);
-		WikiSearch search1 = search(term1, index);
+		WikiSearch search1 = search(term1, index, 0);
 		search1.print();
 		
 		// search for the second term
 		String term2 = "programming";
 		System.out.println("Query: " + term2);
-		WikiSearch search2 = search(term2, index);
+		WikiSearch search2 = search(term2, index, 0);
 		search2.print();
 		
 		// compute the intersection of the searches
 		System.out.println("Query: " + term1 + " AND " + term2);
-		WikiSearch intersection = search1.and(search2);
+		WikiSearch intersection = search1.and(search2, 0);
 		intersection.print();
 	}
 }

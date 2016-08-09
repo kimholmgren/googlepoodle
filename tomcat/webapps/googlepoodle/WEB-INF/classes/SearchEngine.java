@@ -16,7 +16,6 @@ public class SearchEngine {
     private TermCounter termCounter;
     private static JedisIndex jedisIndex;
     
-    
     private static void crawl() throws IOException {
         String source= "https://en.wikipedia.org/wiki/Cat";
         WikiCrawler crawler = new WikiCrawler(source, jedisIndex);
@@ -66,40 +65,40 @@ public class SearchEngine {
         }
         return -1;
     }
-        
-        
-        
     
-    public static List<Entry<String, Integer>> executeSearch(int mode, String query, int parse) throws IOException {
-        System.out.println("Inside, " + mode + query + parse);
+    public static List<Entry<String, Double>> executeSearch(int mode, String query, int parse) throws IOException {
         WikiSearch search;
         initializeJedisIndex();
+        int sortMode;
+        if( mode == 1 ){
+            sortMode = 1;
+        } else {
+            sortMode = 0;
+        }
+        
         if(parse!=0) {
             //get the two WikiSearches
             String[] parsedQuery = query.split("\\s+");
-            WikiSearch search1 = WikiSearch.search(parsedQuery[0], jedisIndex);
-            WikiSearch search2 = WikiSearch.search(parsedQuery[2], jedisIndex);
+            WikiSearch search1 = WikiSearch.search(parsedQuery[0], jedisIndex, mode);
+            WikiSearch search2 = WikiSearch.search(parsedQuery[2], jedisIndex, mode);
             if(parse==1) {
                 //and query
-                search = search1.and(search2);
+                search = search1.and(search2, mode);
             } else if(parse==2) {
                 //or query
-                search = search1.or(search2);
+                search = search1.or(search2, mode);
             } else {
                 //minus query
                 search = search1.minus(search2);
             }
         } else {
             //just one wiki search
-            search = WikiSearch.search(query, jedisIndex);
-            System.out.println("ok were here");
+            search = WikiSearch.search(query, jedisIndex, mode);
         }
         //sort the wikisearch
-        List<Entry<String, Integer>> sortedResults = search.sort(mode);
-        System.out.println("andhere"+sortedResults.size());
+        List<Entry<String, Double>> sortedResults = search.sort(sortMode);
         for (int i=0; i<sortedResults.size(); i++) {
-            Entry<String, Integer> entry = sortedResults.get(i);
-            System.out.println("finally were here");
+            Entry<String, Double> entry = sortedResults.get(i);
             System.out.println("Key: "+entry.getKey()+" Value: "+entry.getValue());
         }
        return sortedResults;
@@ -127,22 +126,20 @@ public class SearchEngine {
             query = scanner.next();
             parsedValue = validString(query);
         }
-
         
-        
-        System.out.println("Which search mode would you like to use? Enter an option 0-4.");
-        System.out.println("If you'd like more information about the modes, please enter 'help'.");
-        System.out.println("If you don't want to complete this search, enter 'quit'.");
+        System.out.println("Which search mode would you like to use? Enter an option 0-4." +
+                           "If you'd like more information about the modes, please enter 'help'." +
+                            "If you don't want to complete this search, enter 'quit'.");
         int validmode=0;
         int searchMode=-1;
         while(validmode==0) {
             String mode = scanner.next();
             if(mode.equals("help") || mode.equals("h") ||mode.equals("Help") || mode.equals("H")) {
                 String mode0="Mode 0: Term Frequency (TF)";
-                String mode1="Mode 1: Description to go here";
-                String mode2="Mode 2: Description to go here";
-                String mode3="Mode 3: Description to go here";
-                String mode4="Mode 4: Description to go here";
+                String mode1="Mode 1: Term Infrequency";
+                String mode2="Mode 2: Log Scaled Term Frequency";
+                String mode3="Mode 3: Term Frequency Inverse Document Frequency (TF-IDF)";
+                String mode4="Mode 4: Poodle Mode (works best with one search term)";
                 System.out.println(mode0+"\n"+mode1+"\n"+mode2+"\n"+mode3+"\n"+mode4+"\n");
                 System.out.println("Now, which mode would you like to search in?");
             } else if(mode.equals("0") || mode.equals("1") || mode.equals("2") || mode.equals("3" )|| mode.equals("4")) {
