@@ -10,7 +10,8 @@ public class SearchEngine {
     
     private TermCounter termCounter;
     private static JedisIndex jedisIndex;
-
+    
+    
     private static void crawl() throws IOException {
         String source= "https://en.wikipedia.org/wiki/Cat";
         JedisMaker jedisMaker = new JedisMaker();
@@ -27,14 +28,7 @@ public class SearchEngine {
     
     private static int executeSearch(int mode, String query) throws IOException {
         
-        
-        return 1;
-        
-    }
-    
-    
-    public static void main(String[] args) throws IOException {
-        
+        // ------------------------- PARSE QUERY ----------------------------
         String query;
         String firstTerm;
         String boolTerm;
@@ -91,6 +85,20 @@ public class SearchEngine {
                 break;
             }
         }
+        
+        // ------------------------- Execute Search ----------------------------
+        
+        // We now have twoSearchTerms, firstTerm, boolTerm, and secondTerm
+        
+        
+        
+        return 1;
+        
+    }
+    
+    
+    public static void main(String[] args) throws IOException {
+        
         
         System.out.println("Which search mode would you like to use? Enter an option 0-4.");
         System.out.println("If you'd like more information about the modes, please enter 'help'.");
