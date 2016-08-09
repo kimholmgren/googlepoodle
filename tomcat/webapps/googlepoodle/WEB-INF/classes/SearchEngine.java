@@ -19,9 +19,6 @@ public class SearchEngine {
     
     private static void crawl() throws IOException {
         String source= "https://en.wikipedia.org/wiki/Cat";
-        JedisMaker jedisMaker = new JedisMaker();
-        Jedis jedis = jedisMaker.make();
-        jedisIndex = new JedisIndex(jedis);
         WikiCrawler crawler = new WikiCrawler(source, jedisIndex);
         //crawler.crawl(false);
         String res;
@@ -75,6 +72,7 @@ public class SearchEngine {
     
     private static List<Entry<String, Integer>> executeSearch(int mode, String query, int parse) throws IOException {
         WikiSearch search;
+        initializeJedisIndex();
         if(parse!=0) {
             //get the two WikiSearches
             String[] parsedQuery = query.split("\\s+");
@@ -98,6 +96,13 @@ public class SearchEngine {
         List<Entry<String, Integer>> sortedResults = search.sort(mode);
        return sortedResults;
         
+    }
+
+    public static void initializeJedisIndex() throws IOException {
+        JedisMaker jedisMaker = new JedisMaker();
+        Jedis jedis = jedisMaker.make();
+        jedisIndex = new JedisIndex(jedis);
+        return;
     }
     
     
