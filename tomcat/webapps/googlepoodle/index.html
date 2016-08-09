@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Google Poodle</title>
+</head>
+
+<style>
+body {
+  background:#add8e6;
+}
+
+img.header {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+.text {
+  color:navy;
+  text-align:center;
+  font-family:Verdana;
+}
+
+#poodle {
+  width:10%;
+  border:1px solid black;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  width:80%;
+  border-radius:4px;
+  background-color: white;
+  background-image: url('http://cliparts.co/cliparts/rij/GLE/rijGLEbET.jpg');
+  background-size:20px;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding-left: 40px;
+
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ffb6c1; 
+    
+    cursor:pointer;
+    border-radius: 5px; 
+    font-size:20px;
+    color:navy;
+}
+
+</style>
+<body>
+
+<h1 class="text">Google Poodle</h1>
+<img class="header" id="poodle" src="http://cliparts.co/cliparts/BTa/ELj/BTaELjppc.jpg"/>
+
+<br>
+<br>
+
+<form id="myForm" method="get" action="http://localhost:9999/googlepoodle/search" class="text">
+  <br>
+  What would you like to search?<br>
+  <input type="text" id="query" name="query" required><br>
+  <a href="help.html">Help</a>
+  <br>
+  <br>
+
+  <b>Search Mode</b><br>
+  <input type="radio" name="searchMode" value="1">Term frequency <br>
+  <input type="radio" name="searchMode" value="2">Tf-idf algorithm **not implemented yet ** <br>
+  <input type="radio" name="searchMode" value="3">Opposite search <br>
+  <input type="radio" name="searchMode" value="4">~Random mode~ <br>
+  <br>
+  <br>
+  <input id="searchButton" type="submit" value="Search"><br>
+
+
+</form>
+
+<script language="javascript">
+  function executeQuery(){
+    var query = document.getElementById("query").value;
+    var form = document.getElementById("myForm");
+    var radios = form.elements["searchMode"];
+    var val=1;
+    for(var i=0, len=radios.length; i<len; i++) {
+      if(radios[i].checked) {
+        val = radios[i].value;
+        break;
+      }
+    }
+    //now have query and val
+    alert('query: '+query+' searchmode: '+val);
+
+  }
+
+
+
+</script>
+
+
+
+
+</body>
+
+
+
+</html>

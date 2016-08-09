@@ -1,0 +1,273 @@
+09-Aug-2016 07:18:49.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.36
+09-Aug-2016 07:18:49.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 9 2016 13:55:50 UTC
+09-Aug-2016 07:18:49.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.36.0
+09-Aug-2016 07:18:49.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+09-Aug-2016 07:18:49.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.5
+09-Aug-2016 07:18:49.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+09-Aug-2016 07:18:49.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+09-Aug-2016 07:18:49.335 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_45-b14
+09-Aug-2016 07:18:49.335 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+09-Aug-2016 07:18:49.336 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Applications/tomcat
+09-Aug-2016 07:18:49.336 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Applications/tomcat
+09-Aug-2016 07:18:49.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Applications/tomcat/conf/logging.properties
+09-Aug-2016 07:18:49.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Aug-2016 07:18:49.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-Aug-2016 07:18:49.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/Applications/tomcat/endorsed
+09-Aug-2016 07:18:49.342 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Applications/tomcat
+09-Aug-2016 07:18:49.342 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Applications/tomcat
+09-Aug-2016 07:18:49.343 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Applications/tomcat/temp
+09-Aug-2016 07:18:49.343 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/ninaholmgren/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+09-Aug-2016 07:18:49.705 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 07:18:49.764 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+09-Aug-2016 07:18:49.772 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 07:18:49.774 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+09-Aug-2016 07:18:49.775 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1422 ms
+09-Aug-2016 07:18:49.815 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+09-Aug-2016 07:18:49.816 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.36
+09-Aug-2016 07:18:49.830 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/docs
+09-Aug-2016 07:18:50.514 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/docs has finished in 683 ms
+09-Aug-2016 07:18:50.515 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/examples
+09-Aug-2016 07:18:50.966 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/examples has finished in 452 ms
+09-Aug-2016 07:18:50.966 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/host-manager
+09-Aug-2016 07:18:51.005 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/host-manager has finished in 38 ms
+09-Aug-2016 07:18:51.005 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/manager
+09-Aug-2016 07:18:51.055 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/manager has finished in 50 ms
+09-Aug-2016 07:18:51.056 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/ROOT
+09-Aug-2016 07:18:51.113 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/ROOT has finished in 57 ms
+09-Aug-2016 07:18:51.120 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 07:18:51.132 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 07:18:51.133 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1357 ms
+09-Aug-2016 07:22:36.967 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 07:22:37.039 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 07:22:37.090 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+09-Aug-2016 07:22:37.182 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 07:22:37.277 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 07:22:37.278 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 07:22:37.280 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 07:29:49.439 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.36
+09-Aug-2016 07:29:49.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 9 2016 13:55:50 UTC
+09-Aug-2016 07:29:49.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.36.0
+09-Aug-2016 07:29:49.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+09-Aug-2016 07:29:49.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.5
+09-Aug-2016 07:29:49.441 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+09-Aug-2016 07:29:49.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+09-Aug-2016 07:29:49.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_45-b14
+09-Aug-2016 07:29:49.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+09-Aug-2016 07:29:49.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Applications/tomcat
+09-Aug-2016 07:29:49.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Applications/tomcat
+09-Aug-2016 07:29:49.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Applications/tomcat/conf/logging.properties
+09-Aug-2016 07:29:49.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Aug-2016 07:29:49.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-Aug-2016 07:29:49.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/Applications/tomcat/endorsed
+09-Aug-2016 07:29:49.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Applications/tomcat
+09-Aug-2016 07:29:49.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Applications/tomcat
+09-Aug-2016 07:29:49.445 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Applications/tomcat/temp
+09-Aug-2016 07:29:49.445 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/ninaholmgren/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+09-Aug-2016 07:29:49.776 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 07:29:49.830 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+09-Aug-2016 07:29:49.836 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 07:29:49.839 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+09-Aug-2016 07:29:49.840 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1190 ms
+09-Aug-2016 07:29:49.881 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+09-Aug-2016 07:29:49.881 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.36
+09-Aug-2016 07:29:49.898 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/docs
+09-Aug-2016 07:29:50.515 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/docs has finished in 617 ms
+09-Aug-2016 07:29:50.516 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/examples
+09-Aug-2016 07:29:50.957 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/examples has finished in 442 ms
+09-Aug-2016 07:29:50.958 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/googlepoodle
+09-Aug-2016 07:29:51.002 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/googlepoodle has finished in 43 ms
+09-Aug-2016 07:29:51.002 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/host-manager
+09-Aug-2016 07:29:51.042 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/host-manager has finished in 40 ms
+09-Aug-2016 07:29:51.043 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/manager
+09-Aug-2016 07:29:51.074 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/manager has finished in 31 ms
+09-Aug-2016 07:29:51.074 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/ROOT
+09-Aug-2016 07:29:51.099 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/ROOT has finished in 25 ms
+09-Aug-2016 07:29:51.105 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 07:29:51.118 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 07:29:51.122 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1282 ms
+09-Aug-2016 08:04:21.233 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/googlepoodle]
+09-Aug-2016 08:04:21.238 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] has started
+09-Aug-2016 08:04:21.402 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.digester.Digester.fatalError Parse Fatal Error at line 1 column 1: Premature end of file.
+ org.xml.sax.SAXParseException; systemId: file:/Applications/tomcat/webapps/googlepoodle/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1019)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:649)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:120)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1115)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5202)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3858)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1372)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1345)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1581)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:284)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1140)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1376)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1380)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1348)
+	at java.lang.Thread.run(Thread.java:745)
+
+09-Aug-2016 08:04:21.405 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at file:/Applications/tomcat/webapps/googlepoodle/WEB-INF/web.xml
+ org.xml.sax.SAXParseException; systemId: file:/Applications/tomcat/webapps/googlepoodle/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1019)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:649)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:120)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1115)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5202)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3858)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1372)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1345)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1581)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:284)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1140)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1376)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1380)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1348)
+	at java.lang.Thread.run(Thread.java:745)
+
+09-Aug-2016 08:04:21.407 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line 1 column 1
+09-Aug-2016 08:04:21.412 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+09-Aug-2016 08:04:21.413 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+09-Aug-2016 08:04:21.414 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.startInternal Context [/googlepoodle] startup failed due to previous errors
+09-Aug-2016 08:04:21.417 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] is completed
+09-Aug-2016 08:04:51.449 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/googlepoodle]
+09-Aug-2016 08:05:31.608 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/googlepoodle]
+09-Aug-2016 08:05:31.609 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] has started
+09-Aug-2016 08:05:31.645 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] is completed
+09-Aug-2016 08:05:48.834 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 08:05:48.902 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 08:05:48.957 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+09-Aug-2016 08:05:49.003 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 08:05:49.007 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 08:05:49.010 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 08:05:49.012 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 08:06:03.121 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.36
+09-Aug-2016 08:06:03.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 9 2016 13:55:50 UTC
+09-Aug-2016 08:06:03.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.36.0
+09-Aug-2016 08:06:03.123 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+09-Aug-2016 08:06:03.124 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.5
+09-Aug-2016 08:06:03.124 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+09-Aug-2016 08:06:03.124 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+09-Aug-2016 08:06:03.124 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_45-b14
+09-Aug-2016 08:06:03.124 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+09-Aug-2016 08:06:03.124 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Applications/tomcat
+09-Aug-2016 08:06:03.125 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Applications/tomcat
+09-Aug-2016 08:06:03.125 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Applications/tomcat/conf/logging.properties
+09-Aug-2016 08:06:03.126 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Aug-2016 08:06:03.126 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-Aug-2016 08:06:03.126 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/Applications/tomcat/endorsed
+09-Aug-2016 08:06:03.126 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Applications/tomcat
+09-Aug-2016 08:06:03.126 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Applications/tomcat
+09-Aug-2016 08:06:03.127 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Applications/tomcat/temp
+09-Aug-2016 08:06:03.127 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/ninaholmgren/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+09-Aug-2016 08:06:03.472 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 08:06:03.546 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+09-Aug-2016 08:06:03.551 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 08:06:03.553 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+09-Aug-2016 08:06:03.554 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1298 ms
+09-Aug-2016 08:06:03.593 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+09-Aug-2016 08:06:03.593 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.36
+09-Aug-2016 08:06:03.610 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/docs
+09-Aug-2016 08:06:04.151 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/docs has finished in 541 ms
+09-Aug-2016 08:06:04.152 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/examples
+09-Aug-2016 08:06:04.661 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/examples has finished in 509 ms
+09-Aug-2016 08:06:04.662 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/googlepoodle
+09-Aug-2016 08:06:04.728 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/googlepoodle has finished in 66 ms
+09-Aug-2016 08:06:04.728 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/host-manager
+09-Aug-2016 08:06:04.774 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/host-manager has finished in 46 ms
+09-Aug-2016 08:06:04.775 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/manager
+09-Aug-2016 08:06:04.802 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/manager has finished in 28 ms
+09-Aug-2016 08:06:04.803 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/ROOT
+09-Aug-2016 08:06:04.829 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/ROOT has finished in 26 ms
+09-Aug-2016 08:06:04.833 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 08:06:04.841 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 08:06:04.842 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1287 ms
+09-Aug-2016 08:07:55.011 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/googlepoodle]
+09-Aug-2016 08:07:55.015 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] has started
+09-Aug-2016 08:07:55.105 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] is completed
+09-Aug-2016 08:09:32.718 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 08:09:32.788 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 08:09:32.845 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+09-Aug-2016 08:09:32.897 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 08:09:32.901 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 08:09:32.903 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 08:09:32.905 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 08:09:35.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.36
+09-Aug-2016 08:09:35.426 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 9 2016 13:55:50 UTC
+09-Aug-2016 08:09:35.426 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.36.0
+09-Aug-2016 08:09:35.427 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+09-Aug-2016 08:09:35.427 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.5
+09-Aug-2016 08:09:35.427 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+09-Aug-2016 08:09:35.427 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+09-Aug-2016 08:09:35.428 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_45-b14
+09-Aug-2016 08:09:35.428 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+09-Aug-2016 08:09:35.428 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Applications/tomcat
+09-Aug-2016 08:09:35.428 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Applications/tomcat
+09-Aug-2016 08:09:35.429 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Applications/tomcat/conf/logging.properties
+09-Aug-2016 08:09:35.430 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Aug-2016 08:09:35.430 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-Aug-2016 08:09:35.431 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/Applications/tomcat/endorsed
+09-Aug-2016 08:09:35.431 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Applications/tomcat
+09-Aug-2016 08:09:35.431 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Applications/tomcat
+09-Aug-2016 08:09:35.431 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Applications/tomcat/temp
+09-Aug-2016 08:09:35.432 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/ninaholmgren/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+09-Aug-2016 08:09:35.695 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 08:09:35.724 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+09-Aug-2016 08:09:35.729 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 08:09:35.731 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+09-Aug-2016 08:09:35.732 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 879 ms
+09-Aug-2016 08:09:35.761 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+09-Aug-2016 08:09:35.762 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.36
+09-Aug-2016 08:09:35.773 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/docs
+09-Aug-2016 08:09:36.385 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/docs has finished in 611 ms
+09-Aug-2016 08:09:36.385 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/examples
+09-Aug-2016 08:09:36.973 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/examples has finished in 588 ms
+09-Aug-2016 08:09:36.973 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/googlepoodle
+09-Aug-2016 08:09:37.050 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/googlepoodle has finished in 76 ms
+09-Aug-2016 08:09:37.050 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/host-manager
+09-Aug-2016 08:09:37.112 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/host-manager has finished in 62 ms
+09-Aug-2016 08:09:37.112 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/manager
+09-Aug-2016 08:09:37.150 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/manager has finished in 38 ms
+09-Aug-2016 08:09:37.150 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Applications/tomcat/webapps/ROOT
+09-Aug-2016 08:09:37.181 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Applications/tomcat/webapps/ROOT has finished in 31 ms
+09-Aug-2016 08:09:37.186 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+09-Aug-2016 08:09:37.195 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+09-Aug-2016 08:09:37.196 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1462 ms
+09-Aug-2016 10:02:28.230 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] has started
+09-Aug-2016 10:02:28.518 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] is completed
