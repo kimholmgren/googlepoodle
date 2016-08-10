@@ -24,7 +24,6 @@ public class SearchEngine {
         do {
             res = crawler.crawl(false);
         } while (res != null);
-
     }
 
     public static int validString(String query) {
@@ -109,7 +108,6 @@ public class SearchEngine {
             System.out.println("Key: "+entry.getKey()+" Value: "+entry.getValue());
         }
        return sortedResults;
-        
     }
 
     public static void initializeJedisIndex() throws IOException {
@@ -122,9 +120,15 @@ public class SearchEngine {
     
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in).useDelimiter("\\n");
+        
+        //Spoken greeting for fun :)
+        Runtime rt = Runtime.getRuntime();
+        String greeting = "say Welcome to the Google Poodle search engine!";
+        Process proc = rt.exec(greeting);
+        
         System.out.println("Welcome to Google Poodle search engine! Please "+
                            "enter one search term or two separated by a boolean operator");
-        System.out.println("Ex. \"cat\" or \"cat or dog\" (we support at most two search terms)");
+        System.out.println("Ex. \"apple\" or \"socrates or banana\" (we support at most two search terms)");
         
         int parsedValue = -1;
         String query="";
@@ -133,23 +137,25 @@ public class SearchEngine {
             query = scanner.next();
             parsedValue = validString(query);
         }
-        
+
         System.out.println("Which search mode would you like to use? Enter an option 0-4." +
-                           "If you'd like more information about the modes, please enter 'help'." +
-                            "If you don't want to complete this search, enter 'quit'.");
+                    "If you'd like more information about the modes, please enter 'help'." +
+                    "If you don't want to complete this search, enter 'quit'.");
         int validmode=0;
         int searchMode=-1;
         while(validmode==0) {
             String mode = scanner.next();
-            if(mode.equals("help") || mode.equals("h") ||mode.equals("Help") || mode.equals("H")) {
+            if(mode.equals("help") || mode.equals("h") ||
+               mode.equals("Help") || mode.equals("H")) {
                 String mode0="Mode 0: Term Frequency (TF)";
                 String mode1="Mode 1: Term Infrequency";
-                String mode2="Mode 2: Log Scaled Term Frequency";
+                String mode2="Mode 2: Log-Scaled Term Frequency";
                 String mode3="Mode 3: Term Frequency Inverse Document Frequency (TF-IDF)";
                 String mode4="Mode 4: Poodle Mode (works best with one search term)";
                 System.out.println(mode0+"\n"+mode1+"\n"+mode2+"\n"+mode3+"\n"+mode4+"\n");
-                System.out.println("Now, which mode would you like to search in?");
-            } else if(mode.equals("0") || mode.equals("1") || mode.equals("2") || mode.equals("3" )|| mode.equals("4")) {
+                System.out.println("Which mode would you like to search in?");
+            } else if(mode.equals("0") || mode.equals("1") || mode.equals("2") ||
+                      mode.equals("3" )|| mode.equals("4")) {
                 searchMode = Integer.parseInt(mode);
                 String searchModeStr;
                 switch(searchMode){
@@ -164,9 +170,10 @@ public class SearchEngine {
                     default: searchModeStr = "Poodle mode";
                         break;
                 }
-                System.out.println("Great, we're searching in for \""+query+"\" using "+searchModeStr);
+                System.out.println("Searching for \""+query+"\" using "+searchModeStr);
                 validmode=1;
-            } else if (mode.equals("quit") || mode.equals("q") ||mode.equals("Quit") || mode.equals("Q")) {
+            } else if (mode.equals("quit") || mode.equals("q") ||
+                       mode.equals("Quit") || mode.equals("Q")) {
                 return;
             } else {
                 System.out.println("Please enter a valid mode between 0 and 4.");
