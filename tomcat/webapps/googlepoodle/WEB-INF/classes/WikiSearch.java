@@ -55,7 +55,6 @@ public class WikiSearch {
 	}
 
 	// for print without argument
-
 	private void print() {
 		print(0);
 	}
@@ -114,12 +113,12 @@ public class WikiSearch {
 	 * @return
 	 */
 	protected double totalRelevance(Double rel1, Double rel2, int mode) {
-		// simple starting place: relevance is the sum of the term frequencies.
-        if(mode == 0 || mode == 1 || mode == 4){
-            return (double)rel1 + rel2;
+        if(mode == 2 || mode == 3){
+            // if relevance is log scaled, totalrelevance is the log of e^rel1 + e^rel2
+            return (Math.log(Math.exp(rel1) + Math.exp(rel2)));
         }
-        // if relevance is log scaled, totalrelevance is the log of e^rel1 + e^rel2
-        return (Math.log(Math.exp(rel1) + Math.exp(rel2)));
+        // if frequencies are simple sums, totalrelevance is sum of rel1 and rel2
+        return (double)rel1 + rel2;
 	}
 
 	/**

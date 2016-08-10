@@ -76,7 +76,13 @@ public class SearchEngine {
             sortMode = 0;
         }
         
-        if(parse!=0) {
+        if(mode == 4){ // Only for poodle mode
+            String[] parsedQuery = query.split("\\s+");
+            WikiSearch search1 = WikiSearch.search(parsedQuery[0], jedisIndex, mode);
+            WikiSearch search2 = WikiSearch.search("poodle", jedisIndex, mode);
+            search = search1.and(search2, mode);
+        }
+        else if(parse!=0) {
             //get the two WikiSearches
             String[] parsedQuery = query.split("\\s+");
             WikiSearch search1 = WikiSearch.search(parsedQuery[0], jedisIndex, mode);
@@ -95,6 +101,7 @@ public class SearchEngine {
             //just one wiki search
             search = WikiSearch.search(query, jedisIndex, mode);
         }
+        
         //sort the wikisearch
         List<Entry<String, Double>> sortedResults = search.sort(sortMode);
         for (int i=0; i<sortedResults.size(); i++) {
@@ -144,7 +151,20 @@ public class SearchEngine {
                 System.out.println("Now, which mode would you like to search in?");
             } else if(mode.equals("0") || mode.equals("1") || mode.equals("2") || mode.equals("3" )|| mode.equals("4")) {
                 searchMode = Integer.parseInt(mode);
-                System.out.println("Great, we're searching in mode "+searchMode+" for \""+query+"\"");
+                String searchModeStr;
+                switch(searchMode){
+                    case 0:  searchModeStr = "TF";
+                        break;
+                    case 1:  searchModeStr = "Term Infrequency";
+                        break;
+                    case 2: searchModeStr = "Log TF";
+                        break;
+                    case 3: searchModeStr = "TF-IDF";
+                        break;
+                    default: searchModeStr = "Poodle mode";
+                        break;
+                }
+                System.out.println("Great, we're searching in for \""+query+"\" using "+searchModeStr);
                 validmode=1;
             } else if (mode.equals("quit") || mode.equals("q") ||mode.equals("Quit") || mode.equals("Q")) {
                 return;

@@ -93,12 +93,20 @@ public class JedisIndex {
 		Set<String> urls = getURLs(term);
 		for (String url: urls) {
 			double count = getCount(url, term);
-            if(mode == 0 || mode == 1){
+            if(mode == 0 || mode == 1 || mode == 4){
                 map.put(url, count);
             }
             else if(mode == 2){
                 double logCount = Math.log(count);
                 map.put(url, logCount);
+            }
+            else if(mode == 3){ // TF-IDF
+                // total num documents
+                Set<String> list = getURLs("a");
+                int numDocs = list.size();
+                
+                double idf = Math.log( (double)numDocs / urls.size());
+                map.put(url, count*idf);
             }
 		}
 		return map;
