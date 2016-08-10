@@ -138,9 +138,6 @@ public class SearchEngine {
             parsedValue = validString(query);
         }
 
-        initializeJedisIndex();
-        crawl();
-
         System.out.println("Which search mode would you like to use? Enter an option 0-4." +
                     "If you'd like more information about the modes, please enter 'help'." +
                     "If you don't want to complete this search, enter 'quit'.");

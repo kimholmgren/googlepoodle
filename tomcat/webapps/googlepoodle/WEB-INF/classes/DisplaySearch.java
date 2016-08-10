@@ -62,6 +62,30 @@ public class DisplaySearch extends HttpServlet {
          //css for search results
          out.println(".result { margin-left:4%;margin-right:4%; }");
 
+         //css for search again form 
+         out.println("input[type=text] {"+
+          "padding: 12px 20px;"+
+         "margin: 8px 0;"+
+         "box-sizing: border-box;"+
+         "width:75%;"+
+         "border-radius:4px;"+
+         "background-color: white;"+
+         "background-image: url('poodle.png');"+
+         "background-size:20px;"+
+         "background-position: 10px 10px; "+
+         "background-repeat: no-repeat;"+
+         "padding-left: 40px;"+
+         "}");
+
+      out.println("input[type=submit] {"+
+            "padding:5px 15px; "+
+            "background:#FFAB40;"+ 
+            " cursor:pointer;"+
+            "border-radius: 5px; "+
+            "font-size:20px;"+
+            "color:navy;"+
+         "}");
+
          out.println("</style>");
 
          out.println("<head><title>Search Results</title></head>");
@@ -73,6 +97,14 @@ public class DisplaySearch extends HttpServlet {
          out.println("<h1>Search Results for \""+query+"\"</h1>");
          out.println("<img class=\"img-hor\" src=\"poodle.png\" alt=\"logo\" style=\"position:absolute;right:100px;top:15px;\" />");
          out.println("</div><br>");
+
+         //option to search again
+   out.println("<form id=\"myForm\" method=\"get\" action=\"http://localhost:9999/googlepoodle/search\" class=\"text\">"+
+  "<input type=\"text\" id=\"query\" name=\"query\" required>&nbsp;&nbsp;&nbsp;&nbsp;"+
+  "<input id=\"searchButton\" type=\"submit\" value=\"Search\">"+
+  "<a href=\"help.html\" style=\"display:block;font-size:12px;text-align:center\";>Help</a>"+
+   "</form>");
+
 
 
      
