@@ -39,11 +39,13 @@ public class WikiFetcher {
 		return paras;
 	}
 
-	public static String[] findTitleAndFirstPara(String url) throws IOException {
+	public static String[] findTitleAndFirstSentence(String url) throws IOException {
 		//sleepIfNeeded();
 		// download and parse the document
 		Connection conn = Jsoup.connect(url);
 		Document doc = conn.get();
+		//Document doc = Jsoup.parse(new URL(url).openStream(), "UTF-8", url);
+
 		//get title
 		String title = doc.title();
 		// select the content text and pull out the paragraphs.
@@ -52,11 +54,13 @@ public class WikiFetcher {
 		// TODO: avoid selecting paragraphs from sidebars and boxouts
 		Elements paras = content.select("p");
 		Element firstPara = paras.first();
-		String paragraph = firstPara.text();
+		String paragraph = firstPara.text().trim();
+		String[] sentences = paragraph.split("\\.");
+
 
 		String[] ret = new String[2];
 		ret[0]=title;
-		ret[1]=paragraph;
+		ret[1]=sentences[0]+".";
 		return ret;
 
 	}

@@ -11,7 +11,7 @@ import java.util.Map.Entry;
  
 public class DisplaySearch extends HttpServlet {
 
-   public String css = "<style>body {background:#add8e6;margin:0px;}\n .text {color:navy; text-align:center; font-family:Verdana;} h1 {color:navy; text-align:center; text-shadow: -1.5px 0 #ffb6c1, 0 1.5px #ffb6c1, 1.5px 0 #ffb6c1, 0 -1.5px #ffb6c1}</style>";
+   public String css = "<style>body {background:white;margin:0px;}\n .text {color:#1C4587; text-align:center; font-family:Verdana;} h1 {color:#1C4587; text-align:center;}</style>";
 
 
    @Override
@@ -44,7 +44,10 @@ public class DisplaySearch extends HttpServlet {
 
          //css for header poodle thing
          out.println("<style>");
-         out.println("p {margin:0px;}");
+         out.println("p {margin:0px;font-family:Helvetica;}");
+         out.println("a { color:#1C4587;text-decoration:none;font-size:24px;font-family:Helvetica; }");
+         out.println("a:hover { color:green; }");
+         out.println(".urlText { color:#FFAB40;font-size:13px; }");
          out.println(".header img { float:left; width:5%; }");
          out.println(".header h1 { position:relative; top:18px; left:10px; }");
          out.println(".img-hor {"+
@@ -65,10 +68,10 @@ public class DisplaySearch extends HttpServlet {
          out.println("<body>");
 
          //make the header with the poodle
-         out.println("<div style=\"background-color:white;height:15%;\" class=\"header\">");
-         out.println("<img src=\"http://cliparts.co/cliparts/rij/GLE/rijGLEbET.jpg\" alt=\"logo\" style=\"position:absolute;left:100px;top:15px;\" />");
+         out.println("<div style=\"background-color:#fbf3d1;height:15%;\" class=\"header\">");
+         out.println("<img src=\"poodle.png\" alt=\"logo\" style=\"position:absolute;left:100px;top:15px;\" />");
          out.println("<h1>Search Results for \""+query+"\"</h1>");
-         out.println("<img class=\"img-hor\" src=\"http://cliparts.co/cliparts/rij/GLE/rijGLEbET.jpg\" alt=\"logo\" style=\"position:absolute;right:100px;top:15px;\" />");
+         out.println("<img class=\"img-hor\" src=\"poodle.png\" alt=\"logo\" style=\"position:absolute;right:100px;top:15px;\" />");
          out.println("</div><br>");
 
 
@@ -76,10 +79,10 @@ public class DisplaySearch extends HttpServlet {
          for(int i=0; i<results.size(); i++) {
             Entry<String, Double> entry = results.get(i);
             String url = entry.getKey();
-            String[] info = WikiFetcher.findTitleAndFirstPara(url);
+            String[] info = WikiFetcher.findTitleAndFirstSentence(url);
             out.println("<div class=\"result\">");
             out.println("<a href=\""+url+"\">"+info[0]+"</a>");
-            out.println("<p>"+url+"</p>");
+            out.println("<p class=\"urlText\">"+url+"</p>");
             out.println("<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+info[1]+"</p><br>");
             out.println("</div>");
          }

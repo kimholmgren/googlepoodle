@@ -17,7 +17,7 @@ public class SearchEngine {
     private static JedisIndex jedisIndex;
     
     private static void crawl() throws IOException {
-        String source= "https://en.wikipedia.org/wiki/Cat";
+        String source= "https://en.wikipedia.org/wiki/Schnoodle";
         WikiCrawler crawler = new WikiCrawler(source, jedisIndex);
         //crawler.crawl(false);
         String res;
@@ -137,6 +137,9 @@ public class SearchEngine {
             query = scanner.next();
             parsedValue = validString(query);
         }
+
+        initializeJedisIndex();
+        crawl();
 
         System.out.println("Which search mode would you like to use? Enter an option 0-4." +
                     "If you'd like more information about the modes, please enter 'help'." +

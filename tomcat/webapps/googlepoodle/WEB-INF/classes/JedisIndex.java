@@ -194,6 +194,8 @@ public class JedisIndex {
 			Integer count = tc.get(term);
 			t.hset(hashname, term, count.toString());
 			t.sadd(urlSetKey(term), url);
+			//System.out.println("hashname: "+hashname+" term:"+term+" count:"+count.toString());
+			//System.out.println("1. "+urlSetKey(term)+" url:"+url);
 		}
 		List<Object> res = t.exec();
 		return res;

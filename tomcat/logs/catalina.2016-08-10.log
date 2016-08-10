@@ -1,0 +1,237 @@
+10-Aug-2016 05:35:32.169 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 05:35:32.319 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 05:35:32.376 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+10-Aug-2016 05:35:32.584 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 05:35:32.634 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 05:35:32.666 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 05:35:32.668 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 05:38:02.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.36
+10-Aug-2016 05:38:02.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 9 2016 13:55:50 UTC
+10-Aug-2016 05:38:02.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.36.0
+10-Aug-2016 05:38:02.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+10-Aug-2016 05:38:02.496 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.5
+10-Aug-2016 05:38:02.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+10-Aug-2016 05:38:02.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+10-Aug-2016 05:38:02.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_45-b14
+10-Aug-2016 05:38:02.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Aug-2016 05:38:02.497 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 05:38:02.498 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 05:38:02.498 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/conf/logging.properties
+10-Aug-2016 05:38:02.499 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Aug-2016 05:38:02.499 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Aug-2016 05:38:02.499 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/endorsed
+10-Aug-2016 05:38:02.499 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 05:38:02.499 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 05:38:02.500 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/temp
+10-Aug-2016 05:38:02.500 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/ninaholmgren/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+10-Aug-2016 05:38:02.912 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 05:38:02.972 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Aug-2016 05:38:02.976 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 05:38:02.978 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Aug-2016 05:38:02.979 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1507 ms
+10-Aug-2016 05:38:03.050 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+10-Aug-2016 05:38:03.050 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.36
+10-Aug-2016 05:38:03.070 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/docs
+10-Aug-2016 05:38:04.172 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 05:38:04.347 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/docs has finished in 1,276 ms
+10-Aug-2016 05:38:04.348 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/examples
+10-Aug-2016 05:38:04.892 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 05:38:04.986 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/examples has finished in 637 ms
+10-Aug-2016 05:38:04.986 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/googlepoodle
+10-Aug-2016 05:38:05.176 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 05:38:05.188 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/googlepoodle has finished in 202 ms
+10-Aug-2016 05:38:05.189 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/host-manager
+10-Aug-2016 05:38:05.424 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 05:38:05.429 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/host-manager has finished in 240 ms
+10-Aug-2016 05:38:05.429 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/manager
+10-Aug-2016 05:38:05.607 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 05:38:05.613 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/manager has finished in 183 ms
+10-Aug-2016 05:38:05.616 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/ROOT
+10-Aug-2016 05:38:05.801 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 05:38:05.807 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/ROOT has finished in 192 ms
+10-Aug-2016 05:38:05.814 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 05:38:05.825 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 05:38:05.826 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2846 ms
+10-Aug-2016 05:55:47.814 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] has started
+10-Aug-2016 05:55:48.424 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 05:55:48.431 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] is completed
+10-Aug-2016 05:56:38.516 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] has started
+10-Aug-2016 05:56:38.870 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 05:56:38.883 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] is completed
+10-Aug-2016 05:57:38.969 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] has started
+10-Aug-2016 05:57:39.126 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 05:57:39.135 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] is completed
+10-Aug-2016 06:00:59.442 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] has started
+10-Aug-2016 06:00:59.948 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:00:59.960 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] is completed
+10-Aug-2016 06:05:10.444 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] has started
+10-Aug-2016 06:05:10.846 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:05:10.852 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] is completed
+10-Aug-2016 06:10:31.321 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] has started
+10-Aug-2016 06:10:31.782 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:10:31.799 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] is completed
+10-Aug-2016 06:45:48.055 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] has started
+10-Aug-2016 06:45:48.728 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:45:48.756 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/googlepoodle] is completed
+10-Aug-2016 06:45:51.048 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:45:51.111 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:45:51.165 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+10-Aug-2016 06:45:51.311 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:45:51.328 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:45:51.342 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:45:51.351 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:46:01.842 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.36
+10-Aug-2016 06:46:01.844 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 9 2016 13:55:50 UTC
+10-Aug-2016 06:46:01.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.36.0
+10-Aug-2016 06:46:01.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+10-Aug-2016 06:46:01.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.5
+10-Aug-2016 06:46:01.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+10-Aug-2016 06:46:01.845 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+10-Aug-2016 06:46:01.846 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_45-b14
+10-Aug-2016 06:46:01.846 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Aug-2016 06:46:01.846 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 06:46:01.846 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 06:46:01.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/conf/logging.properties
+10-Aug-2016 06:46:01.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Aug-2016 06:46:01.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Aug-2016 06:46:01.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/endorsed
+10-Aug-2016 06:46:01.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 06:46:01.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 06:46:01.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/temp
+10-Aug-2016 06:46:01.848 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/ninaholmgren/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+10-Aug-2016 06:46:02.153 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:46:02.203 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Aug-2016 06:46:02.208 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:46:02.210 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Aug-2016 06:46:02.211 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1249 ms
+10-Aug-2016 06:46:02.278 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+10-Aug-2016 06:46:02.278 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.36
+10-Aug-2016 06:46:02.293 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/docs
+10-Aug-2016 06:46:03.427 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:46:03.584 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/docs has finished in 1,291 ms
+10-Aug-2016 06:46:03.585 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/examples
+10-Aug-2016 06:46:04.145 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:46:04.291 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/examples has finished in 706 ms
+10-Aug-2016 06:46:04.292 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/googlepoodle
+10-Aug-2016 06:46:04.516 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:46:04.527 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/googlepoodle has finished in 235 ms
+10-Aug-2016 06:46:04.528 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/host-manager
+10-Aug-2016 06:46:04.681 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:46:04.689 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/host-manager has finished in 161 ms
+10-Aug-2016 06:46:04.690 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/manager
+10-Aug-2016 06:46:04.907 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:46:04.910 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/manager has finished in 219 ms
+10-Aug-2016 06:46:04.910 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/ROOT
+10-Aug-2016 06:46:05.077 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:46:05.079 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/ROOT has finished in 169 ms
+10-Aug-2016 06:46:05.095 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:46:05.105 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:46:05.106 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2894 ms
+10-Aug-2016 06:46:58.864 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:46:58.925 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:46:58.977 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+10-Aug-2016 06:46:59.069 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:46:59.075 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:46:59.077 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:46:59.079 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:48:28.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.36
+10-Aug-2016 06:48:28.977 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 9 2016 13:55:50 UTC
+10-Aug-2016 06:48:28.977 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.36.0
+10-Aug-2016 06:48:28.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+10-Aug-2016 06:48:28.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.5
+10-Aug-2016 06:48:28.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+10-Aug-2016 06:48:28.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+10-Aug-2016 06:48:28.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_45-b14
+10-Aug-2016 06:48:28.979 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Aug-2016 06:48:28.979 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 06:48:28.979 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 06:48:28.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/conf/logging.properties
+10-Aug-2016 06:48:28.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Aug-2016 06:48:28.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Aug-2016 06:48:28.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/endorsed
+10-Aug-2016 06:48:28.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 06:48:28.981 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 06:48:28.981 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/temp
+10-Aug-2016 06:48:28.981 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/ninaholmgren/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+10-Aug-2016 06:48:29.347 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:48:29.416 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Aug-2016 06:48:29.424 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:48:29.443 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Aug-2016 06:48:29.444 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1726 ms
+10-Aug-2016 06:48:29.503 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+10-Aug-2016 06:48:29.503 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.36
+10-Aug-2016 06:48:29.518 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/docs
+10-Aug-2016 06:48:30.602 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:48:30.827 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/docs has finished in 1,308 ms
+10-Aug-2016 06:48:30.828 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/examples
+10-Aug-2016 06:48:31.332 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:48:31.401 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/examples has finished in 574 ms
+10-Aug-2016 06:48:31.402 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/googlepoodle
+10-Aug-2016 06:48:31.608 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:48:31.621 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/googlepoodle has finished in 219 ms
+10-Aug-2016 06:48:31.622 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/host-manager
+10-Aug-2016 06:48:31.885 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:48:31.891 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/host-manager has finished in 269 ms
+10-Aug-2016 06:48:31.891 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/manager
+10-Aug-2016 06:48:32.037 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:48:32.041 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/manager has finished in 150 ms
+10-Aug-2016 06:48:32.042 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/ROOT
+10-Aug-2016 06:48:32.160 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:48:32.162 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/ROOT has finished in 120 ms
+10-Aug-2016 06:48:32.169 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:48:32.179 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:48:32.181 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2737 ms
+10-Aug-2016 06:57:06.689 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:57:06.761 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:57:06.812 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+10-Aug-2016 06:57:06.915 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:57:06.920 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:57:06.922 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:57:06.925 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:57:16.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.36
+10-Aug-2016 06:57:16.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 9 2016 13:55:50 UTC
+10-Aug-2016 06:57:16.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.36.0
+10-Aug-2016 06:57:16.373 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+10-Aug-2016 06:57:16.373 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.11.5
+10-Aug-2016 06:57:16.373 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+10-Aug-2016 06:57:16.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre
+10-Aug-2016 06:57:16.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_45-b14
+10-Aug-2016 06:57:16.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Aug-2016 06:57:16.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 06:57:16.375 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 06:57:16.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/conf/logging.properties
+10-Aug-2016 06:57:16.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Aug-2016 06:57:16.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Aug-2016 06:57:16.376 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/endorsed
+10-Aug-2016 06:57:16.377 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 06:57:16.377 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat
+10-Aug-2016 06:57:16.377 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/temp
+10-Aug-2016 06:57:16.378 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/ninaholmgren/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+10-Aug-2016 06:57:17.110 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:57:17.183 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Aug-2016 06:57:17.190 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:57:17.201 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+10-Aug-2016 06:57:17.202 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1752 ms
+10-Aug-2016 06:57:17.247 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+10-Aug-2016 06:57:17.248 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.36
+10-Aug-2016 06:57:17.263 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/docs
+10-Aug-2016 06:57:18.297 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:57:18.461 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/docs has finished in 1,198 ms
+10-Aug-2016 06:57:18.462 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/examples
+10-Aug-2016 06:57:19.014 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:57:19.086 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/examples has finished in 624 ms
+10-Aug-2016 06:57:19.086 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/googlepoodle
+10-Aug-2016 06:57:19.254 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:57:19.264 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/googlepoodle has finished in 177 ms
+10-Aug-2016 06:57:19.264 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/host-manager
+10-Aug-2016 06:57:19.393 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:57:19.404 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/host-manager has finished in 140 ms
+10-Aug-2016 06:57:19.405 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/manager
+10-Aug-2016 06:57:19.653 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:57:19.657 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/manager has finished in 251 ms
+10-Aug-2016 06:57:19.657 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/ROOT
+10-Aug-2016 06:57:19.812 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+10-Aug-2016 06:57:19.815 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /Users/ninaholmgren/Desktop/.git/googlepoodle/tomcat/webapps/ROOT has finished in 158 ms
+10-Aug-2016 06:57:19.829 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-9999"]
+10-Aug-2016 06:57:19.838 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+10-Aug-2016 06:57:19.839 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2636 ms

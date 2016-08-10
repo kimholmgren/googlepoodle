@@ -140,7 +140,7 @@ PRGDIR=`dirname "$PRG"`
 
 # Ensure that any user defined CLASSPATH variables are not used on startup,
 # but allow them to be specified in setenv.sh, in rare case when it is needed.
-CLASSPATH=../webapps/googlepoodle/WEB-INF:./../webapps/googlepoodle/WEB-INF/classes/hamcrest-core-1.3.jar:./../webapps/googlepoodle/WEB-INF/classes/hamcrest-library-1.3.jar:./../webapps/googlepoodle/WEB-INF/classes/jedis-2.8.0.jar:./../webapps/googlepoodle/WEB-INF/classes/jsoup-1.8.3.jar:./../webapps/googlepoodle/WEB-INF/classes/
+CLASSPATH=../webapps/googlepoodle/:../webapps/googlepoodle/WEB-INF:./../webapps/googlepoodle/WEB-INF/classes/hamcrest-core-1.3.jar:./../webapps/googlepoodle/WEB-INF/classes/hamcrest-library-1.3.jar:./../webapps/googlepoodle/WEB-INF/classes/jedis-2.8.0.jar:./../webapps/googlepoodle/WEB-INF/classes/jsoup-1.8.3.jar:./../webapps/googlepoodle/WEB-INF/classes/
 
 if [ -r "$CATALINA_BASE/bin/setenv.sh" ]; then
   . "$CATALINA_BASE/bin/setenv.sh"
