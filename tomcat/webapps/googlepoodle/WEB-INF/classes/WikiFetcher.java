@@ -39,6 +39,28 @@ public class WikiFetcher {
 		return paras;
 	}
 
+	public static String[] findTitleAndFirstPara(String url) throws IOException {
+		//sleepIfNeeded();
+		// download and parse the document
+		Connection conn = Jsoup.connect(url);
+		Document doc = conn.get();
+		//get title
+		String title = doc.title();
+		// select the content text and pull out the paragraphs.
+		Element content = doc.getElementById("mw-content-text");
+
+		// TODO: avoid selecting paragraphs from sidebars and boxouts
+		Elements paras = content.select("p");
+		Element firstPara = paras.first();
+		String paragraph = firstPara.text();
+
+		String[] ret = new String[2];
+		ret[0]=title;
+		ret[1]=paragraph;
+		return ret;
+
+	}
+
 	/**
 	 * Reads the contents of a Wikipedia page from src/resources.
 	 *
